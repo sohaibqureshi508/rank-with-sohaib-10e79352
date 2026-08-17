@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 export function Contact() {
   return (
     <section id="contact" className="py-32 relative overflow-hidden">
