@@ -8,13 +8,13 @@ export function Hero() {
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div className="relative z-10 text-center lg:text-left">
             <div className="mb-6 flex justify-center lg:justify-start">
-              <span className="inline-flex items-center rounded-full bg-primary/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary ring-1 ring-inset ring-primary/20">
+              <span className="inline-flex items-center rounded-full bg-primary/5 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary ring-1 ring-inset ring-primary/10">
                 SEO Expert & Consultant
               </span>
             </div>
-            <h1 className="text-5xl font-black tracking-tighter text-foreground sm:text-7xl lg:leading-[1.1]">
+            <h1 className="text-5xl font-black tracking-tight text-foreground sm:text-7xl lg:leading-[1.1]">
               RANK WITH <br />
-              <span className="text-primary italic">SOHAIB</span>
+              <span className="text-primary">SOHAIB</span>
             </h1>
             <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground">
               I'm <span className="font-bold text-foreground underline decoration-primary/30 decoration-4 underline-offset-4">Sohaib Qureshi</span>, a freelance SEO specialist in Pakistan driving organic growth with Technical SEO, On-Page strategies, and AI-driven insights.
