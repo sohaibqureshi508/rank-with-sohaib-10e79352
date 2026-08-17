@@ -83,20 +83,20 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-primary/10">
-      <nav className="fixed top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-          <span className="text-xl font-black tracking-tighter text-primary">RANK WITH SOHAIB</span>
-          <div className="flex items-center gap-8 text-sm font-semibold">
-            <a href="#experience" className="hidden hover:text-primary transition-colors sm:inline uppercase tracking-wider">Experience</a>
-            <a href="#projects" className="hidden hover:text-primary transition-colors sm:inline uppercase tracking-wider">Projects</a>
-            <a href="#skills" className="hidden hover:text-primary transition-colors sm:inline uppercase tracking-wider">SEO Services</a>
+      <nav className="fixed top-0 z-50 w-full bg-white/90 backdrop-blur-md">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 lg:px-8">
+          <span className="text-xl font-black tracking-tighter text-foreground">RANK WITH <span className="text-primary">SOHAIB</span></span>
+          <div className="flex items-center gap-8 text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
+            <a href="#experience" className="hidden hover:text-primary transition-colors sm:inline">Experience</a>
+            <a href="#projects" className="hidden hover:text-primary transition-colors sm:inline">Projects</a>
+            <a href="#skills" className="hidden hover:text-primary transition-colors sm:inline">Services</a>
             <a
               href="https://github.com/sohaibqureshi508"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary transition-colors"
             >
-              GH
+              GitHub
             </a>
             <a
               href="https://www.linkedin.com/in/sohaib-qureshi-seo-services/"
@@ -104,7 +104,7 @@ function Index() {
               rel="noopener noreferrer"
               className="hover:text-primary transition-colors"
             >
-              LI
+              LinkedIn
             </a>
           </div>
         </div>
@@ -114,22 +114,22 @@ function Index() {
         <div className="bg-background">
           <Hero />
         </div>
-        <div className="bg-white border-y border-border/50 shadow-inner">
+        <div className="bg-slate-50 border-y border-border/40">
           <Experience />
         </div>
-        <div className="bg-background">
+        <div className="bg-white">
           <Projects />
         </div>
-        <div className="bg-zinc-900 text-white dark:bg-zinc-950">
+        <div className="bg-zinc-900 text-white">
           <Skills />
         </div>
-        <div className="bg-white border-y border-border/50">
+        <div className="bg-slate-50 border-y border-border/40">
           <LocalSeo />
         </div>
-        <div className="bg-background">
+        <div className="bg-white">
           <Certifications />
         </div>
-        <div className="bg-primary text-white">
+        <div className="bg-zinc-900 text-white">
           <Contact />
         </div>
       </main>

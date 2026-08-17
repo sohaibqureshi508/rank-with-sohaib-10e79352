@@ -31,12 +31,12 @@ export function Hero() {
 
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative aspect-square w-full max-w-md">
-              <div className="absolute -inset-4 rounded-[3rem] bg-gradient-to-tr from-primary/20 to-transparent blur-2xl" aria-hidden="true" />
-              <div className="absolute inset-0 rounded-[2.5rem] border-2 border-primary/10 bg-white p-3 shadow-2xl">
+              <div className="absolute -inset-4 rounded-[3rem] bg-primary/5 blur-2xl" aria-hidden="true" />
+              <div className="absolute inset-0 rounded-[2.5rem] border border-border bg-white p-2 shadow-xl">
                 <img
                   src={photo.url}
                   alt="Sohaib Qureshi, SEO Expert and SEO Consultant in Pakistan"
-                  className="h-full w-full rounded-[2rem] object-cover grayscale transition-all duration-700 hover:grayscale-0"
+                  className="h-full w-full rounded-[2.2rem] object-cover transition-all duration-700"
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 hidden h-32 w-32 items-center justify-center rounded-full bg-primary p-4 text-center text-[10px] font-black leading-tight text-white shadow-xl lg:flex uppercase tracking-tighter">

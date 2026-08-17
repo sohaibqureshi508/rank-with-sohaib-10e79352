@@ -32,9 +32,9 @@ export function Experience() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-20 grid grid-cols-1 lg:grid-cols-2 gap-10 items-end">
           <div>
-            <h2 className="text-xs font-black uppercase tracking-[0.3em] text-primary mb-4">Case Studies</h2>
-            <p className="text-4xl font-black tracking-tighter text-foreground sm:text-5xl uppercase">
-              PROFESSIONAL <br />EXPERIENCE
+            <h2 className="text-xs font-bold uppercase tracking-[0.3em] text-primary mb-4">Case Studies</h2>
+            <p className="text-4xl font-black tracking-tight text-foreground sm:text-5xl uppercase">
+              PROFESSIONAL EXPERIENCE
             </p>
           </div>
           <p className="text-muted-foreground text-lg max-w-md">
@@ -44,7 +44,7 @@ export function Experience() {
 
         <div className="mx-auto max-w-4xl space-y-16">
           {experiences.map((exp, index) => (
-            <div key={index} className="group relative grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 p-8 rounded-4xl bg-background border border-border/50 transition-all hover:shadow-[0_20px_50px_rgba(0,0,0,0.05)] hover:border-primary/20">
+            <div key={index} className="group relative grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 p-8 rounded-3xl bg-white border border-border shadow-sm transition-all hover:shadow-md hover:border-primary/20">
               <div>
                 <span className="inline-block px-3 py-1 rounded-full bg-primary text-[10px] font-black tracking-widest text-white uppercase mb-4">
                   {exp.period}
