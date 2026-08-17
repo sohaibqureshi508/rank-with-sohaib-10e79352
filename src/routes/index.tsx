@@ -82,54 +82,65 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="min-h-screen bg-[#fcfbf8] text-gray-900 selection:bg-blue-100">
-      <nav className="fixed top-0 z-50 w-full border-b border-gray-100 bg-white/80 backdrop-blur-md">
+    <div className="min-h-screen bg-background text-foreground selection:bg-primary/10">
+      <nav className="fixed top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-          <span className="text-xl font-bold tracking-tight text-blue-600">Rank With Sohaib</span>
-          <div className="flex items-center gap-6 text-sm font-medium">
-            <a href="#experience" className="hidden hover:text-blue-600 transition-colors sm:inline">Experience</a>
-            <a href="#projects" className="hidden hover:text-blue-600 transition-colors sm:inline">Projects</a>
-            <a href="#skills" className="hidden hover:text-blue-600 transition-colors sm:inline">SEO Services</a>
-            <a href="#local-seo" className="hidden hover:text-blue-600 transition-colors lg:inline">Local SEO</a>
-            <a href="#certifications" className="hidden hover:text-blue-600 transition-colors lg:inline">Certifications</a>
+          <span className="text-xl font-black tracking-tighter text-primary">RANK WITH SOHAIB</span>
+          <div className="flex items-center gap-8 text-sm font-semibold">
+            <a href="#experience" className="hidden hover:text-primary transition-colors sm:inline uppercase tracking-wider">Experience</a>
+            <a href="#projects" className="hidden hover:text-primary transition-colors sm:inline uppercase tracking-wider">Projects</a>
+            <a href="#skills" className="hidden hover:text-primary transition-colors sm:inline uppercase tracking-wider">SEO Services</a>
             <a
               href="https://github.com/sohaibqureshi508"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-600 transition-colors"
+              className="hover:text-primary transition-colors"
             >
-              GitHub
+              GH
             </a>
             <a
               href="https://www.linkedin.com/in/sohaib-qureshi-seo-services/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-600 transition-colors"
+              className="hover:text-primary transition-colors"
             >
-              LinkedIn
+              LI
             </a>
           </div>
         </div>
       </nav>
 
       <main>
-        <Hero />
-        <Experience />
-        <Projects />
-        <Skills />
-        <LocalSeo />
-        <Certifications />
-        <Contact />
+        <div className="bg-background">
+          <Hero />
+        </div>
+        <div className="bg-white border-y border-border/50 shadow-inner">
+          <Experience />
+        </div>
+        <div className="bg-background">
+          <Projects />
+        </div>
+        <div className="bg-zinc-900 text-white dark:bg-zinc-950">
+          <Skills />
+        </div>
+        <div className="bg-white border-y border-border/50">
+          <LocalSeo />
+        </div>
+        <div className="bg-background">
+          <Certifications />
+        </div>
+        <div className="bg-primary text-white">
+          <Contact />
+        </div>
       </main>
 
-      <footer className="border-t border-gray-100 py-12">
-        <div className="mx-auto max-w-7xl px-4 text-center text-sm text-gray-500 sm:px-6 lg:px-8">
-          <p className="mb-3">
-            <a href="https://github.com/sohaibqureshi508" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">GitHub</a>
-            <span className="mx-3">·</span>
-            <a href="https://www.linkedin.com/in/sohaib-qureshi-seo-services/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">LinkedIn</a>
+      <footer className="bg-background border-t border-border py-12">
+        <div className="mx-auto max-w-7xl px-4 text-center text-sm font-medium text-muted-foreground sm:px-6 lg:px-8">
+          <p className="mb-4 flex justify-center gap-6">
+            <a href="https://github.com/sohaibqureshi508" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">GitHub</a>
+            <a href="https://www.linkedin.com/in/sohaib-qureshi-seo-services/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">LinkedIn</a>
           </p>
-          <p>© {new Date().getFullYear()} Rank With Sohaib — Sohaib Qureshi, SEO Expert in Pakistan.</p>
+          <p className="uppercase tracking-widest text-[10px] opacity-60">© {new Date().getFullYear()} Rank With Sohaib — SEO Expert Multan, Pakistan.</p>
         </div>
       </footer>
     </div>
