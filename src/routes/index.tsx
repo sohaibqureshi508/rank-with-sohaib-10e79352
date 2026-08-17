@@ -91,6 +91,8 @@ function Index() {
             <a href="#experience" className="hidden hover:text-blue-600 transition-colors sm:inline">Experience</a>
             <a href="#projects" className="hidden hover:text-blue-600 transition-colors sm:inline">Projects</a>
             <a href="#skills" className="hidden hover:text-blue-600 transition-colors sm:inline">SEO Services</a>
+            <a href="#local-seo" className="hidden hover:text-blue-600 transition-colors lg:inline">Local SEO</a>
+            <a href="#certifications" className="hidden hover:text-blue-600 transition-colors lg:inline">Certifications</a>
             <a href="#guide" className="hidden hover:text-blue-600 transition-colors lg:inline">Deployment Guide</a>
             <a
               href="https://github.com/sohaibqureshi508"
