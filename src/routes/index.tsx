@@ -3,6 +3,8 @@ import { Hero } from "@/components/portfolio/Hero";
 import { Experience } from "@/components/portfolio/Experience";
 import { Projects } from "@/components/portfolio/Projects";
 import { Skills } from "@/components/portfolio/Skills";
+import { Certifications } from "@/components/portfolio/Certifications";
+import { LocalSeo } from "@/components/portfolio/LocalSeo";
 import { Contact } from "@/components/portfolio/Contact";
 import { DeploymentGuide } from "@/components/portfolio/DeploymentGuide";
 
