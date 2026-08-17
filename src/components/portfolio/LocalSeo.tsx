@@ -27,9 +27,9 @@ export function LocalSeo() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div className="sticky top-32">
-            <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-primary mb-6">Market Dominance</h2>
-            <p className="text-4xl font-black tracking-tighter text-foreground sm:text-6xl uppercase leading-none mb-8">
-              LOCAL SEO <br />& GMB MASTERY
+            <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-primary mb-6">Market Dominance</h2>
+            <p className="text-4xl font-black tracking-tight text-foreground sm:text-6xl uppercase leading-none mb-8">
+              LOCAL SEO & GMB MASTERY
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed font-medium max-w-md">
               Dominating the Pakistan market through hyper-local Google Business Profile optimization and strategic map placement.
@@ -40,11 +40,11 @@ export function LocalSeo() {
             {work.map((item, index) => (
               <div 
                 key={item.title} 
-                className="group p-8 rounded-[2.5rem] bg-zinc-50 border border-border/50 transition-all hover:bg-white hover:border-primary/30 hover:shadow-xl"
+                className="group p-8 rounded-3xl bg-white border border-border transition-all hover:border-primary/30 hover:shadow-lg"
               >
                 <div className="flex items-center gap-4 mb-4">
                   <span className="text-xs font-black text-primary/40 group-hover:text-primary transition-colors">0{index + 1}</span>
-                  <h3 className="text-xl font-black text-foreground uppercase tracking-tight">{item.title}</h3>
+                  <h3 className="text-xl font-bold text-foreground uppercase tracking-tight">{item.title}</h3>
                 </div>
                 <p className="text-muted-foreground leading-relaxed font-medium">{item.description}</p>
               </div>

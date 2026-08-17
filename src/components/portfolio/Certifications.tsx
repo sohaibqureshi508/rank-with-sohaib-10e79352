@@ -25,9 +25,9 @@ export function Certifications() {
     <section id="certifications" className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center mb-20">
-          <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-primary mb-6">Verified Skills</h2>
-          <p className="text-4xl font-black tracking-tighter text-foreground sm:text-6xl uppercase leading-none">
-            SEMRUSH <br />CERTIFIED
+          <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-primary mb-6">Verified Skills</h2>
+          <p className="text-4xl font-black tracking-tight text-foreground sm:text-6xl uppercase leading-none">
+            SEMRUSH CERTIFIED
           </p>
         </div>
 
@@ -35,7 +35,7 @@ export function Certifications() {
           {certificates.map((cert) => (
             <div
               key={cert.id}
-              className="group relative flex flex-col p-10 rounded-[3rem] bg-white border-2 border-border/50 transition-all duration-500 hover:border-primary hover:shadow-2xl"
+              className="group relative flex flex-col p-10 rounded-3xl bg-white border border-border transition-all duration-500 hover:border-primary/30 hover:shadow-xl"
             >
               <div className="mb-8 flex justify-between items-start">
                 <div className="h-12 px-4 flex items-center justify-center rounded-full bg-primary/5 border border-primary/10 text-[10px] font-black uppercase tracking-widest text-primary">
@@ -46,7 +46,7 @@ export function Certifications() {
                 </div>
               </div>
               
-              <h3 className="text-2xl font-black text-foreground uppercase tracking-tight mb-4 leading-tight">{cert.title}</h3>
+              <h3 className="text-2xl font-bold text-foreground uppercase tracking-tight mb-4 leading-tight">{cert.title}</h3>
               <p className="text-sm font-bold text-primary/70 uppercase tracking-widest mb-8">{cert.valid}</p>
               
               <div className="flex flex-wrap gap-2 mb-10">

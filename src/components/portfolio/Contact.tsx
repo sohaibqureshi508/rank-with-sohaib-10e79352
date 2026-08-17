@@ -2,19 +2,19 @@ import { Button } from "@/components/ui/button";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-32 relative overflow-hidden">
+    <section id="contact" className="py-32 relative overflow-hidden bg-zinc-900">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="mx-auto max-w-4xl">
-          <h2 className="text-5xl font-black tracking-tighter text-white sm:text-7xl uppercase mb-8">
-            Ready to <span className="italic opacity-80">Rank</span>?
+          <h2 className="text-5xl font-black tracking-tight text-white sm:text-7xl uppercase mb-8">
+            Ready to <span className="text-primary italic">Rank</span>?
           </h2>
-          <p className="mt-6 text-xl font-bold text-white/80 max-w-2xl mx-auto uppercase tracking-wide">
+          <p className="mt-6 text-xl font-bold text-white/60 max-w-2xl mx-auto uppercase tracking-wide">
             AVAILABLE FOR REMOTE SEO ROLES, FREELANCE CONSULTATIONS, AND TECHNICAL AUDITS.
           </p>
 
           <div className="mt-20 flex flex-col items-center gap-12">
-            <a href="mailto:sohaibqureshi4410@gmail.com" className="group text-3xl sm:text-5xl font-black tracking-tight text-white hover:text-white/80 transition-all border-b-4 border-white/20 pb-4">
-              sohaibqureshi4410<span className="text-white/40 group-hover:text-white transition-colors">@gmail.com</span>
+            <a href="mailto:sohaibqureshi4410@gmail.com" className="group text-3xl sm:text-5xl font-bold tracking-tight text-white hover:text-primary transition-all border-b-2 border-white/10 pb-4">
+              sohaibqureshi4410<span className="text-white/40 group-hover:text-primary transition-colors">@gmail.com</span>
             </a>
             
             <div className="flex flex-wrap justify-center gap-6">

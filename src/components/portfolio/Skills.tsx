@@ -22,9 +22,9 @@ export function Skills() {
     <section id="skills" className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center mb-20">
-          <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-white/40 mb-6">Expertise Stack</h2>
-          <p className="text-4xl font-black tracking-tighter text-white sm:text-6xl uppercase leading-none">
-            SEO STRATEGY <br />& EXECUTION
+          <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-white/40 mb-6">Expertise Stack</h2>
+          <p className="text-4xl font-black tracking-tight text-white sm:text-6xl uppercase leading-none">
+            SEO STRATEGY & EXECUTION
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export function Skills() {
               <div className="absolute top-0 right-0 p-4 text-4xl font-black text-white/5 transition-opacity group-hover:opacity-20 leading-none">
                 0{index + 1}
               </div>
-              <h3 className="text-lg font-black text-white uppercase tracking-wider mb-6 pb-2 border-b border-white/20">
+              <h3 className="text-lg font-bold text-white uppercase tracking-wider mb-6 pb-2 border-b border-white/10">
                 {category.title}
               </h3>
               <ul className="space-y-4">
