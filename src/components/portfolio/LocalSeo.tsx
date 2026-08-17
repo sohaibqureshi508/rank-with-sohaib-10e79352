@@ -23,25 +23,33 @@ export function LocalSeo() {
   ];
 
   return (
-    <section id="local-seo" className="py-24 sm:py-32">
+    <section id="local-seo" className="py-24 sm:py-32 overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center mb-16">
-          <h2 className="text-base font-semibold leading-7 text-blue-600 uppercase tracking-wide">Local SEO</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Google Business Profile &amp; Google Maps SEO
-          </p>
-          <p className="mt-4 text-gray-600">
-            Local SEO for Pakistan SEO services — a fully optimised GMB profile and Google Maps presence built to win the local map pack.
-          </p>
-        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <div className="sticky top-32">
+            <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-primary mb-6">Market Dominance</h2>
+            <p className="text-4xl font-black tracking-tighter text-foreground sm:text-6xl uppercase leading-none mb-8">
+              LOCAL SEO <br />& GMB MASTERY
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed font-medium max-w-md">
+              Dominating the Pakistan market through hyper-local Google Business Profile optimization and strategic map placement.
+            </p>
+          </div>
 
-        <div className="mx-auto grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-2">
-          {work.map((item) => (
-            <div key={item.title} className="rounded-3xl border border-gray-100 bg-white p-8 shadow-sm">
-              <h3 className="text-lg font-bold text-gray-900">{item.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-gray-600">{item.description}</p>
-            </div>
-          ))}
+          <div className="grid grid-cols-1 gap-4">
+            {work.map((item, index) => (
+              <div 
+                key={item.title} 
+                className="group p-8 rounded-[2.5rem] bg-zinc-50 border border-border/50 transition-all hover:bg-white hover:border-primary/30 hover:shadow-xl"
+              >
+                <div className="flex items-center gap-4 mb-4">
+                  <span className="text-xs font-black text-primary/40 group-hover:text-primary transition-colors">0{index + 1}</span>
+                  <h3 className="text-xl font-black text-foreground uppercase tracking-tight">{item.title}</h3>
+                </div>
+                <p className="text-muted-foreground leading-relaxed font-medium">{item.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

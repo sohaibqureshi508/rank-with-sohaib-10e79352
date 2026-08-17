@@ -19,28 +19,28 @@ export function Skills() {
   ];
 
   return (
-    <section id="skills" className="bg-white py-24 sm:py-32">
+    <section id="skills" className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center mb-16">
-          <h2 className="text-base font-semibold leading-7 text-blue-600 uppercase tracking-wide">SEO Services</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            SEO Expertise &amp; Strategy
-          </p>
-          <p className="mt-4 text-gray-600">
-            Full-stack search engine optimisation as an SEO specialist and SEO consultant — built around organic search growth.
+        <div className="mx-auto max-w-4xl text-center mb-20">
+          <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-white/40 mb-6">Expertise Stack</h2>
+          <p className="text-4xl font-black tracking-tighter text-white sm:text-6xl uppercase leading-none">
+            SEO STRATEGY <br />& EXECUTION
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {skillCategories.map((category, index) => (
-            <div key={index} className="space-y-4">
-              <h3 className="text-lg font-bold text-gray-900 border-b pb-2 border-blue-100">{category.title}</h3>
-              <ul className="space-y-2">
+            <div key={index} className="group relative p-8 rounded-3xl bg-white/5 border border-white/10 transition-all hover:bg-white/10 hover:scale-[1.02]">
+              <div className="absolute top-0 right-0 p-4 text-4xl font-black text-white/5 transition-opacity group-hover:opacity-20 leading-none">
+                0{index + 1}
+              </div>
+              <h3 className="text-lg font-black text-white uppercase tracking-wider mb-6 pb-2 border-b border-white/20">
+                {category.title}
+              </h3>
+              <ul className="space-y-4">
                 {category.skills.map((skill, i) => (
-                  <li key={i} className="flex items-center text-sm text-gray-600">
-                    <svg className="h-4 w-4 text-blue-500 mr-2 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
+                  <li key={i} className="flex items-center text-sm font-medium text-white/70">
+                    <div className="h-1.5 w-1.5 bg-primary rounded-full mr-3 shadow-[0_0_8px_rgba(var(--primary),0.5)]" />
                     {skill}
                   </li>
                 ))}

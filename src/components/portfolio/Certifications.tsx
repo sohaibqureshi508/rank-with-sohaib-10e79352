@@ -22,47 +22,50 @@ export function Certifications() {
   ];
 
   return (
-    <section id="certifications" className="bg-white py-24 sm:py-32">
+    <section id="certifications" className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center mb-16">
-          <h2 className="text-base font-semibold leading-7 text-blue-600 uppercase tracking-wide">Certifications</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Semrush Certified SEO Expert
-          </p>
-          <p className="mt-4 text-gray-600">
-            Verified Semrush Academy certifications in keyword research, on-page SEO and AI search.
+        <div className="mx-auto max-w-3xl text-center mb-20">
+          <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-primary mb-6">Verified Skills</h2>
+          <p className="text-4xl font-black tracking-tighter text-foreground sm:text-6xl uppercase leading-none">
+            SEMRUSH <br />CERTIFIED
           </p>
         </div>
 
-        <div className="mx-auto grid max-w-4xl grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {certificates.map((cert) => (
             <div
               key={cert.id}
-              className="flex flex-col rounded-3xl border border-gray-100 bg-[#fcfbf8] p-8 shadow-sm transition-shadow hover:shadow-xl"
+              className="group relative flex flex-col p-10 rounded-[3rem] bg-white border-2 border-border/50 transition-all duration-500 hover:border-primary hover:shadow-2xl"
             >
-              <span className="mb-4 inline-flex w-fit items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-blue-600">
-                {cert.issuer}
-              </span>
-              <h3 className="text-xl font-bold text-gray-900">{cert.title}</h3>
-              <p className="mt-2 text-sm text-gray-500">
-                {cert.valid} · Certificate ID {cert.id}
-              </p>
-              <div className="mt-4 flex flex-wrap gap-2">
+              <div className="mb-8 flex justify-between items-start">
+                <div className="h-12 px-4 flex items-center justify-center rounded-full bg-primary/5 border border-primary/10 text-[10px] font-black uppercase tracking-widest text-primary">
+                  {cert.issuer}
+                </div>
+                <div className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest opacity-60">
+                  ID: {cert.id}
+                </div>
+              </div>
+              
+              <h3 className="text-2xl font-black text-foreground uppercase tracking-tight mb-4 leading-tight">{cert.title}</h3>
+              <p className="text-sm font-bold text-primary/70 uppercase tracking-widest mb-8">{cert.valid}</p>
+              
+              <div className="flex flex-wrap gap-2 mb-10">
                 {cert.skills.map((skill) => (
-                  <span key={skill} className="rounded-full bg-white px-3 py-1 text-xs font-semibold text-gray-600 border border-gray-100">
+                  <span key={skill} className="px-3 py-1 text-[10px] font-black uppercase tracking-widest bg-zinc-50 text-muted-foreground border border-border rounded-full group-hover:bg-primary/5 group-hover:border-primary/20 group-hover:text-primary transition-colors">
                     {skill}
                   </span>
                 ))}
               </div>
+              
               <a
                 href={cert.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 inline-flex w-fit items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-800"
+                className="mt-auto inline-flex items-center gap-3 text-xs font-black uppercase tracking-[0.2em] text-primary group-hover:gap-5 transition-all"
               >
-                View certificate
+                <span>View Certificate</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </a>
             </div>
