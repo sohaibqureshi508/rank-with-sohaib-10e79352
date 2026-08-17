@@ -54,6 +54,22 @@ export const Route = createFileRoute("/")({
             "SEO Strategy",
             "Organic Search",
           ],
+          hasCredential: [
+            {
+              "@type": "EducationalOccupationalCredential",
+              name: "Keyword Research Essentials with Semrush",
+              credentialCategory: "certificate",
+              identifier: "33634549bd",
+              recognizedBy: { "@type": "Organization", name: "Semrush Academy" },
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              name: "On-Page SEO and AI Search Essentials with Semrush",
+              credentialCategory: "certificate",
+              identifier: "34b3570471",
+              recognizedBy: { "@type": "Organization", name: "Semrush Academy" },
+            },
+          ],
           sameAs: [
             "https://github.com/sohaibqureshi508",
             "https://www.linkedin.com/in/sohaib-qureshi-seo-services/",
