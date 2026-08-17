@@ -111,30 +111,30 @@ function Index() {
       </nav>
 
       <main>
-        <div className="bg-background">
+        <div className="bg-white">
           <Hero />
         </div>
-        <div className="bg-slate-50 border-y border-border/40">
+        <div className="bg-slate-100 border-y border-slate-200">
           <Experience />
         </div>
-        <div className="bg-white">
+        <div className="bg-sky-50/70 border-b border-sky-100">
           <Projects />
         </div>
         <div className="bg-zinc-900 text-white">
           <Skills />
         </div>
-        <div className="bg-slate-50 border-y border-border/40">
+        <div className="bg-[#f7f3ec] border-y border-[#e8dfd1]">
           <LocalSeo />
         </div>
         <div className="bg-white">
           <Certifications />
         </div>
-        <div className="bg-zinc-900 text-white">
+        <div className="bg-[#0b1220] text-white">
           <Contact />
         </div>
       </main>
 
-      <footer className="bg-background border-t border-border py-12">
+      <footer className="bg-slate-100 border-t border-slate-200 py-12">
         <div className="mx-auto max-w-7xl px-4 text-center text-sm font-medium text-muted-foreground sm:px-6 lg:px-8">
           <p className="mb-4 flex justify-center gap-6">
             <a href="https://github.com/sohaibqureshi508" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">GitHub</a>
