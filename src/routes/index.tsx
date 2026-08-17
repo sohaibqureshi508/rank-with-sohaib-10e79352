@@ -3,6 +3,8 @@ import { Hero } from "@/components/portfolio/Hero";
 import { Experience } from "@/components/portfolio/Experience";
 import { Projects } from "@/components/portfolio/Projects";
 import { Skills } from "@/components/portfolio/Skills";
+import { Certifications } from "@/components/portfolio/Certifications";
+import { LocalSeo } from "@/components/portfolio/LocalSeo";
 import { Contact } from "@/components/portfolio/Contact";
 import { DeploymentGuide } from "@/components/portfolio/DeploymentGuide";
 
@@ -52,6 +54,22 @@ export const Route = createFileRoute("/")({
             "SEO Strategy",
             "Organic Search",
           ],
+          hasCredential: [
+            {
+              "@type": "EducationalOccupationalCredential",
+              name: "Keyword Research Essentials with Semrush",
+              credentialCategory: "certificate",
+              identifier: "33634549bd",
+              recognizedBy: { "@type": "Organization", name: "Semrush Academy" },
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              name: "On-Page SEO and AI Search Essentials with Semrush",
+              credentialCategory: "certificate",
+              identifier: "34b3570471",
+              recognizedBy: { "@type": "Organization", name: "Semrush Academy" },
+            },
+          ],
           sameAs: [
             "https://github.com/sohaibqureshi508",
             "https://www.linkedin.com/in/sohaib-qureshi-seo-services/",
@@ -73,6 +91,8 @@ function Index() {
             <a href="#experience" className="hidden hover:text-blue-600 transition-colors sm:inline">Experience</a>
             <a href="#projects" className="hidden hover:text-blue-600 transition-colors sm:inline">Projects</a>
             <a href="#skills" className="hidden hover:text-blue-600 transition-colors sm:inline">SEO Services</a>
+            <a href="#local-seo" className="hidden hover:text-blue-600 transition-colors lg:inline">Local SEO</a>
+            <a href="#certifications" className="hidden hover:text-blue-600 transition-colors lg:inline">Certifications</a>
             <a href="#guide" className="hidden hover:text-blue-600 transition-colors lg:inline">Deployment Guide</a>
             <a
               href="https://github.com/sohaibqureshi508"
@@ -99,6 +119,8 @@ function Index() {
         <Experience />
         <Projects />
         <Skills />
+        <LocalSeo />
+        <Certifications />
         <DeploymentGuide />
         <Contact />
       </main>
