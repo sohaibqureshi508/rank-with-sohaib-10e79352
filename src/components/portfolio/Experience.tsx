@@ -28,33 +28,42 @@ export function Experience() {
   ];
 
   return (
-    <section id="experience" className="bg-white py-24 sm:py-32">
+    <section id="experience" className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-blue-600 uppercase tracking-wide">Professional Experience</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            My SEO Career Journey
+        <div className="mb-20 grid grid-cols-1 lg:grid-cols-2 gap-10 items-end">
+          <div>
+            <h2 className="text-xs font-black uppercase tracking-[0.3em] text-primary mb-4">Case Studies</h2>
+            <p className="text-4xl font-black tracking-tighter text-foreground sm:text-5xl uppercase">
+              PROFESSIONAL <br />EXPERIENCE
+            </p>
+          </div>
+          <p className="text-muted-foreground text-lg max-w-md">
+            Delivering measurable search results through technical precision and strategic content planning.
           </p>
         </div>
 
-        <div className="mx-auto mt-16 max-w-3xl space-y-12">
+        <div className="mx-auto max-w-4xl space-y-16">
           {experiences.map((exp, index) => (
-            <div key={index} className="relative pl-8 border-l-2 border-blue-100 hover:border-blue-500 transition-colors pb-8">
-              <div className="absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-blue-500 border-4 border-white shadow-sm"></div>
-              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                <h3 className="text-xl font-bold text-gray-900">{exp.role}</h3>
-                <span className="text-sm font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full">{exp.period}</span>
+            <div key={index} className="group relative grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 p-8 rounded-4xl bg-background border border-border/50 transition-all hover:shadow-[0_20px_50px_rgba(0,0,0,0.05)] hover:border-primary/20">
+              <div>
+                <span className="inline-block px-3 py-1 rounded-full bg-primary text-[10px] font-black tracking-widest text-white uppercase mb-4">
+                  {exp.period}
+                </span>
+                <h3 className="text-2xl font-black tracking-tight text-foreground">{exp.role}</h3>
+                <p className="mt-2 text-sm font-bold text-primary/70 uppercase tracking-wider">{exp.company}</p>
+                <p className="text-xs text-muted-foreground mt-1 uppercase">{exp.type}</p>
               </div>
-              <p className="mt-1 font-semibold text-gray-700">{exp.company} <span className="text-gray-400 font-normal">| {exp.type}</span></p>
-              <p className="mt-4 text-gray-600 leading-relaxed">{exp.description}</p>
-              <ul className="mt-4 space-y-2">
-                {exp.highlights.map((item, i) => (
-                  <li key={i} className="flex items-start text-sm text-gray-600">
-                    <span className="mr-2 text-blue-500">•</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              <div className="border-t md:border-t-0 md:border-l border-border/50 pt-8 md:pt-0 md:pl-8">
+                <p className="text-foreground font-bold leading-relaxed mb-6 italic">"{exp.description}"</p>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {exp.highlights.map((item, i) => (
+                    <li key={i} className="flex items-start text-sm text-muted-foreground leading-snug">
+                      <span className="mr-2 text-primary font-black mt-1">/</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           ))}
         </div>
