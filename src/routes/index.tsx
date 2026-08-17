@@ -101,6 +101,8 @@ function Index() {
         <Experience />
         <Projects />
         <Skills />
+        <LocalSeo />
+        <Certifications />
         <DeploymentGuide />
         <Contact />
       </main>
