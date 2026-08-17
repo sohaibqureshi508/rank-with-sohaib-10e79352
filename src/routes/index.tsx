@@ -6,7 +6,6 @@ import { Skills } from "@/components/portfolio/Skills";
 import { Certifications } from "@/components/portfolio/Certifications";
 import { LocalSeo } from "@/components/portfolio/LocalSeo";
 import { Contact } from "@/components/portfolio/Contact";
-import { DeploymentGuide } from "@/components/portfolio/DeploymentGuide";
 
 const TITLE = "Rank With Sohaib | SEO Expert & SEO Consultant in Pakistan";
 const DESCRIPTION =
@@ -93,7 +92,6 @@ function Index() {
             <a href="#skills" className="hidden hover:text-blue-600 transition-colors sm:inline">SEO Services</a>
             <a href="#local-seo" className="hidden hover:text-blue-600 transition-colors lg:inline">Local SEO</a>
             <a href="#certifications" className="hidden hover:text-blue-600 transition-colors lg:inline">Certifications</a>
-            <a href="#guide" className="hidden hover:text-blue-600 transition-colors lg:inline">Deployment Guide</a>
             <a
               href="https://github.com/sohaibqureshi508"
               target="_blank"
@@ -121,7 +119,6 @@ function Index() {
         <Skills />
         <LocalSeo />
         <Certifications />
-        <DeploymentGuide />
         <Contact />
       </main>
 
