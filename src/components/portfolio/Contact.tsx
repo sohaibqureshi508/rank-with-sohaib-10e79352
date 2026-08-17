@@ -2,23 +2,23 @@ import { Button } from "@/components/ui/button";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-32 relative overflow-hidden bg-zinc-900">
+    <section id="contact" className="py-32 relative overflow-hidden bg-[#0b1220]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="mx-auto max-w-4xl">
           <h2 className="text-5xl font-black tracking-tight text-white sm:text-7xl uppercase mb-8">
-            Ready to <span className="text-primary italic">Rank</span>?
+            Ready to <span className="text-sky-400 italic">Rank</span>?
           </h2>
           <p className="mt-6 text-xl font-bold text-white/60 max-w-2xl mx-auto uppercase tracking-wide">
             AVAILABLE FOR REMOTE SEO ROLES, FREELANCE CONSULTATIONS, AND TECHNICAL AUDITS.
           </p>
 
           <div className="mt-20 flex flex-col items-center gap-12">
-            <a href="mailto:sohaibqureshi4410@gmail.com" className="group text-3xl sm:text-5xl font-bold tracking-tight text-white hover:text-primary transition-all border-b-2 border-white/10 pb-4">
-              sohaibqureshi4410<span className="text-white/40 group-hover:text-primary transition-colors">@gmail.com</span>
+            <a href="mailto:sohaibqureshi4410@gmail.com" className="group text-3xl sm:text-5xl font-bold tracking-tight text-white hover:text-sky-400 transition-all border-b-2 border-white/10 pb-4">
+              sohaibqureshi4410<span className="text-white/40 group-hover:text-sky-400 transition-colors">@gmail.com</span>
             </a>
             
             <div className="flex flex-wrap justify-center gap-6">
-              <Button size="lg" className="h-16 rounded-full bg-white text-primary px-10 text-lg font-black hover:bg-white/90 uppercase tracking-widest transition-transform hover:scale-105" asChild>
+              <Button size="lg" className="h-16 rounded-full bg-sky-400 text-[#0b1220] px-10 text-lg font-black hover:bg-sky-300 uppercase tracking-widest transition-transform hover:scale-105" asChild>
                 <a href="tel:+923008974410">Call Now</a>
               </Button>
               <div className="flex gap-4">
@@ -26,7 +26,7 @@ export function Contact() {
                   href="https://github.com/sohaibqureshi508"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="h-16 w-16 flex items-center justify-center rounded-full border-2 border-white/30 text-white transition-all hover:bg-white hover:text-primary hover:border-white"
+                  className="h-16 w-16 flex items-center justify-center rounded-full border-2 border-white/30 text-white transition-all hover:bg-sky-400 hover:text-[#0b1220] hover:border-sky-400"
                 >
                   <span className="font-black text-xs uppercase">GH</span>
                 </a>
@@ -34,7 +34,7 @@ export function Contact() {
                   href="https://www.linkedin.com/in/sohaib-qureshi-seo-services/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="h-16 w-16 flex items-center justify-center rounded-full border-2 border-white/30 text-white transition-all hover:bg-white hover:text-primary hover:border-white"
+                  className="h-16 w-16 flex items-center justify-center rounded-full border-2 border-white/30 text-white transition-all hover:bg-sky-400 hover:text-[#0b1220] hover:border-sky-400"
                 >
                   <span className="font-black text-xs uppercase">LI</span>
                 </a>

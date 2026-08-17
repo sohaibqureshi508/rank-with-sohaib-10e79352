@@ -40,7 +40,7 @@ export function Skills() {
               <ul className="space-y-4">
                 {category.skills.map((skill, i) => (
                   <li key={i} className="flex items-center text-sm font-medium text-white/70">
-                    <div className="h-1.5 w-1.5 bg-primary rounded-full mr-3 shadow-[0_0_8px_rgba(var(--primary),0.5)]" />
+                    <div className="h-1.5 w-1.5 bg-sky-400 rounded-full mr-3" />
                     {skill}
                   </li>
                 ))}
